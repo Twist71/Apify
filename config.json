@@ -1,0 +1,35 @@
+{
+  "actorId": "apify~facebook-posts-scraper",
+  "inputTemplate": {
+    "startUrls": [
+      {
+        "url": "https://www.facebook.com/Cristiano/",
+        "metadata": {
+          "source_type": "facebook",
+          "post_type": "post",
+          "source_name": "Cristiano Ronaldo",
+          "category": "Athlete & Sports"
+        }
+      }
+    ],
+    "scrapePosts": true,
+    "resultsLimit": 10,
+    "proxyConfig": {
+      "useApifyProxy": true
+    }
+  },
+  "stateFile": "cristiano_state.json",
+  "frequency": 900,
+  "source_metadata": {
+    "source_type": "facebook",
+    "post_type": "post",
+    "source_name": "Cristiano Ronaldo",
+    "category": "Athlete & Sports"
+  },
+  "default_metadata": {
+    "source_type": "facebook",
+    "post_type": "post",
+    "source_name": "",
+    "category": "Sports"
+  }
+}
